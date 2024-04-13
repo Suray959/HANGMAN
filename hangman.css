@@ -1,0 +1,144 @@
+body{
+
+background-image: url(https://i.pinimg.com/736x/04/2f/63/042f6386db0f44d5665138170c5e1681.jpg);
+ background-repeat: no-repeat;
+ background-size:cover;
+ min-height:0 ;
+
+}
+
+h1{
+    display: flex;
+    justify-content:center;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-size:70px;
+    font-style:italic;
+}
+.page2{
+    display: none;
+}
+
+.page1 {
+    background-color: rgb(228, 191, 164);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 10px;
+  }
+.screen{
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    background-color: rgb(169, 134, 94);
+    margin: 0.5%;
+    margin-left:300px;
+    background-repeat: no-repeat;
+    width: max-content;
+    height: max-content;
+}
+.alphabet{
+    border: 0px solid rgb(15, 15, 16);
+    background-color: rgb(47, 146, 216);;
+    border-radius: 0px;
+    display: flex;
+    margin: 10px;
+    grid-gap:5px;
+    padding: 10px;
+    text-transform: uppercase;
+    justify-content: center;
+    
+}
+button{
+    border: 0px solid rgb(15, 15, 16);
+    border-radius: 0px;
+    background-color: rgb(4, 4, 4);
+    font-size: medium;
+    color: aliceblue;
+    transition: 0.2s;
+}
+.alphabet button:hover{
+    background-color: rgb(237, 137, 15);
+}
+
+.underletter{  
+   display: flex;
+   justify-content: center;
+    text-align: center;
+    background-color: rgb(229, 244, 225);
+    color: rgb(20, 21, 21);
+    border: solid black;
+    border-radius: 2px;
+    width: 150px;
+    height: 50px;
+    margin-left: 320px;
+    font-family:cursive;
+
+}
+.game_op{
+    margin-left:300px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.over{
+    width: 200px;
+    height: 55px;
+    font-size: medium;
+    border-radius: 2px;
+    color: black;
+    margin:10px;
+    padding: 10px;
+  background-color: rgb(211, 224, 28);
+   
+}
+.try{
+    width: 200px;
+    height: 55px;
+    font-size: medium;
+    border-radius: 2px;
+    color: black;
+    margin:10px;
+    padding: 10px;
+  background-color: rgb(211, 224, 28);
+   
+}
+
+
+
+
+@media screen and(max-width:560px) {
+
+    body{
+        background-image: url(https://cdn.vectorstock.com/i/preview-1x/45/55/meadows-game-background-vector-4234555.jpg);
+        background-repeat: no-repeat;
+        background-size: 560px;
+       
+        
+    }
+    h1{
+       display: flex;
+       justify-content: center;
+        width: 10px;
+        height: 10px;
+        
+        
+        }
+        .screen{
+        
+            display: flex;
+            justify-content: center;
+            margin: 0.5%;
+            margin-left:150px;
+            background-repeat: no-repeat;
+            width: min-content;
+            height: min-content;
+            background-size:560px;
+        }
+    
+}

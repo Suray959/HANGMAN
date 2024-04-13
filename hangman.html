@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./hangman.css">
+    <title>Hangman</title>
+</head>
+<body>
+<section  class="page1">
+    <h1>Are you ready?</h1>
+    <button onclick="playGame()">START GAME</button>
+</section>
+
+   <section onclick="playGame()" class="page2">
+    <div class="screen">
+        <h1 di>HANGMAN</h1>
+        
+        <div class="underletter" onclick="displayUnderlines()"> </div>
+        
+        <div class="alphabet">
+            <button onclick="checkLetter('A')">A</button>
+            <button onclick="checkLetter('B')">B</button>
+            <button onclick="checkLetter('C')">C</button>
+            <button onclick="checkLetter('D')">D</button>
+            <button onclick="checkLetter('E')">E</button>
+            <button onclick="checkLetter('F')">F</button>
+            <button onclick="checkLetter('G')">G</button>
+            <button onclick="checkLetter('H')">H</button>
+            <button onclick="checkLetter('I')">I</button>
+            <button onclick="checkLetter('J')">J</button>
+            <button onclick="checkLetter('K')">K</button>
+            <button onclick="checkLetter('X')">X</button>
+            <button onclick="checkLetter('L')">L</button>
+            <button onclick="checkLetter('M')">M</button>
+            <button onclick="checkLetter('N')">N</button>
+            <button onclick="checkLetter('O')">O</button>
+            <button onclick="checkLetter('P')">P</button>
+            <button onclick="checkLetter('Q')">Q</button>
+            <button onclick="checkLetter('R')">R</button>
+            <button onclick="checkLetter('S')">S</button>
+            <button onclick="checkLetter('T')">T</button>
+            <button onclick="checkLetter('U')">U</button>
+            <button onclick="checkLetter('V')">V</button>
+            <button onclick="checkLetter('W')">W</button>
+            <button onclick="checkLetter('Y')">Y</button>
+            <button onclick="checkLetter('Z')">Z</button>
+        </div>
+    
+    <div class="game_op">
+        <button onclick="checkWord()" class="over">CHECK</button>
+        <audio class="win" src="./win.wav">Win</audio>
+        <button onclick="resetGame()" class="try">TRY AGAIN</button>
+    </div>
+      
+        
+        </div>
+        
+    </div>
+    
+
+   </section>
+
+
+    <script src="./hangman.js"></script>
+</body>
+</html>
